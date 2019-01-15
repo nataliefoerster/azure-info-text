@@ -14,7 +14,7 @@ def hello():
         visits = redis.incr("counter")
     except RedisError:
         visits = "<i>cannot connect to Redis, counter disabled</i>"
-        #Possible counter, if you connec to Redis
+        #Possible counter, if you connect to Redis
 
     html = "<h3>Hello visitor!</h3>" \
            "<b>It is hard to choose between ACI, AKS and OpenShift...</b> <br/>"\
